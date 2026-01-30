@@ -5,6 +5,7 @@ git clone https://github.com/reenye-lima/SENAI-2026.git
 git add . //Verifica arquivos alterados
 git commit -m "algum comentario" //Verifica as alterações nos arquivos
 git push //Envia as alterações para nuvem
-
 //Atualizar Repositório Local
 git pull
+
+//Criação de Branchs
