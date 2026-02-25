@@ -11,18 +11,3 @@ generator client {
 datasource db {
   provider = "mysql"
 }
-
-model Turmas {
-  id         Int      @id @default(autoincrement())
-  nome       String
-  capacidade Int
-  alunos     Alunos[]
-}
-
-model Alunos {
-  id        Int     @id @default(autoincrement())
-  nome      String
-  matricula Int
-  turmas    Turmas @relation(fields: [turmasId], references: [id])
-  turmasId  Int
-}

@@ -11,8 +11,7 @@ app.use(cors());
 /* Importar e Implementar Rotas */
 // const modelRotas = require("./src/model.routes");
 // app.use(modelRotas);
-const turmasRotas = require("./src/routes/turmas.routes");
-app.use("/turmas", turmasRotas);
+
 /* Fim */
 
 const porta = process.env.PORT_APP || 3000;
