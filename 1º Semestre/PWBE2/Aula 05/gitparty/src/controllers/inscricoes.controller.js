@@ -42,14 +42,14 @@ const atualizar = async (req, res) => {
         const { id } = req.params;
         const dados = req.body;
 
-        await promocaoListaEspera();
-
         if(dados.status == "CANCELADA") await prazoCancelamento(Number(id));
 
         const item = await prisma.inscricoes.update({
             where: { id: Number(id) },
             data: dados
         });
+
+        if(dados.status == "CANCELADA") await promocaoListaEspera();
 
         res.json(item).status(200).end();
     } catch (error) {

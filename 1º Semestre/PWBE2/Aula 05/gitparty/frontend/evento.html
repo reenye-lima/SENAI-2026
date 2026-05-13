@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GitParty - Event Details</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#111c2d",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#fadfb8",
+                        "outline-variant": "#c5c6cd",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e1e0ff",
+                        "secondary": "#4648d4",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "primary-fixed-dim": "#bcc7de",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-container": "#fffbff",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#1e1200",
+                        "on-surface": "#191c1e",
+                        "surface-container": "#eceef0",
+                        "on-background": "#191c1e",
+                        "on-secondary-fixed": "#07006c",
+                        "tertiary-fixed-dim": "#ddc39d",
+                        "on-tertiary-fixed-variant": "#564427",
+                        "surface-container-high": "#e6e8ea",
+                        "on-surface-variant": "#45474c",
+                        "on-primary-container": "#8590a6",
+                        "surface-tint": "#545f73",
+                        "on-secondary-fixed-variant": "#2f2ebe",
+                        "primary": "#091426",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#271902",
+                        "inverse-surface": "#2d3133",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#35260c",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#a38c6a",
+                        "primary-container": "#1e293b",
+                        "inverse-primary": "#bcc7de",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed": "#d8e3fb",
+                        "secondary-container": "#6063ee",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "error-container": "#ffdad6",
+                        "outline": "#75777d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "title-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+
+<body class="font-body-lg text-on-background">
+    <!-- Top Navigation Bar -->
+    <header
+        class="bg-surface border-b border-outline-variant flex justify-between items-center w-full px-margin-desktop h-16 max-w-container-max mx-auto top-0 z-50">
+        <div class="flex items-center gap-stack-md">
+            <span class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary">GitParty</span>
+            <nav class="hidden md:flex gap-gutter items-center">
+                <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Discover</a>
+                <a class="font-body-lg text-body-lg text-secondary font-bold border-b-2 border-secondary pb-1"
+                    href="#">My Events</a>
+                <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Organize</a>
+                <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Calendar</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-stack-sm">
+            <button
+                class="bg-primary text-on-primary px-gutter py-base rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                Create Event
+            </button>
+            <img alt="User profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTd_yw4KMoSIYoWWgWemvnnkKZiLiHmPYgZWHbR3ZbUe4a_40z707N2aygUGTriACi5BErD-C9nOBrpDrqSaYvLGjD_VESLvTOm0LOqQubM9MG2OAFa-ZaKb41tfeu0hRxpb4pQvk-LpgmGie6JFak9dzjVbUhQ4cx8WjOo1QXYLIlR9ZPJxFFiZycfBNyynX3JLhP-lrefs7fNhfWbTrG8_T50YGwQtcLSVjou1YbJ2yNU6ivSm1QRUv69LXNiaX8rmP3L7SuqIn" />
+        </div>
+    </header>
+    <main class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+        <!-- Back Navigation -->
+        <div class="mb-stack-md">
+            <a class="flex items-center gap-base text-on-surface-variant hover:text-primary transition-all group"
+                href="#">
+                <span
+                    class="material-symbols-outlined text-[20px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                <span class="font-body-sm text-body-sm font-semibold">Back to Events</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            <!-- Left Column: Primary Info -->
+            <div class="lg:col-span-8 space-y-stack-md">
+                <!-- Hero Image & Title -->
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                    <img alt="Event Banner" class="w-full h-80 object-cover"
+                        data-alt="A wide cinematic shot of a modern tech conference hall with ambient indigo lighting and architectural minimalist design. Large digital screens display code and abstract geometric patterns. Professionals are engaged in networking in a bright, clean, high-density space with soft natural light streaming through large windows."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtp1zQNeQG8xuISa59OtP4udjbXc6TqJNIBLBkzBHDHVZb7FFKPc6I33ooPkvOK1KR7QvGsRi7vI5akNkCC24wrefDruaKdZ2TZCClzDA9FOYjapo_Qog7XnDTszkwzuRx7aEtV9YjLBv8cD3grFUXbQ17JzghjscebLVH3_anhFoz3oMYln9E7g5jOqO5JmfjyZwhUCikpvMScb_jOqsqFSuWyNcxmwrAX_8oT4tj2vhaZDcyTwt6PdBeotBbQuIhlF-Fz_5oPsqw" />
+                    <div class="p-stack-md space-y-stack-sm">
+                        <div class="flex justify-between items-start">
+                            <h1 class="font-display-lg text-display-lg text-primary">Open Source Summit 2024</h1>
+                            <div class="flex gap-stack-sm">
+                                <button
+                                    class="flex items-center gap-base px-gutter py-base border border-slate-200 rounded-lg hover:bg-slate-50 transition-all">
+                                    <span class="material-symbols-outlined text-[20px]">edit</span>
+                                    <span class="font-body-sm text-body-sm font-semibold">Editar Informações</span>
+                                </button>
+                                <button
+                                    class="flex items-center gap-base px-gutter py-base bg-secondary text-on-secondary rounded-lg hover:bg-opacity-90 transition-all">
+                                    <span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+                                    <span class="font-body-sm text-body-sm font-semibold">Upload de Imagem</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-base">
+                            <span
+                                class="bg-surface-container-low px-stack-sm py-1 rounded-full font-label-caps text-label-caps text-on-surface-variant uppercase">Workshop</span>
+                            <span
+                                class="bg-surface-container-low px-stack-sm py-1 rounded-full font-label-caps text-label-caps text-on-surface-variant uppercase">Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="bg-white p-stack-md rounded-xl border border-slate-200">
+                    <h2 class="font-title-md text-title-md text-primary mb-stack-sm">Descrição</h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Join us for the premier gathering of open-source enthusiasts, developers, and maintainers. This
+                        year's Summit focuses on the evolution of collaborative software development in the age of AI.
+                        We will feature keynote speakers from leading tech organizations, hands-on workshops, and
+                        deep-dive technical sessions.
+                        <br /><br />
+                        Whether you're a seasoned contributor or just starting your journey in open source, GitParty
+                        provides the perfect platform to network, learn, and build the future of software together.
+                    </p>
+                </div>
+                <!-- Gallery Section -->
+                <section class="space-y-stack-sm">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-title-md text-title-md text-primary">Galeria</h2>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">6 images uploaded</span>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-base">
+                        <div
+                            class="aspect-square bg-slate-200 rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-all cursor-pointer">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A close-up shot of a developer hands typing on a mechanical keyboard with subtle RGB lighting. The background is a blurred office setting with architectural minimalist elements. The mood is focused and professional, using a clean slate and indigo color palette."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQR5FaByFpvI7kpDpbChAVgwYmkCEd4_kixJhYEyvbpR5VHcxuxruWmIY2wwwLeaX8Ztlr6Pks8-_afOEVTS_xIor7rwmwJvn8oBrSeF5f6sFOl12eRLWBbj-lVESgCMbPDmPGmQv3G_sIZF0TDx4Y8uCfksSpueoLrUhqHDGkNuFxursu9iBmddZ0p08Y7NQ1dlkajpMkkz5ZzF1XmXJQVwIYG2oAQmKTv-215Vck_w5g5ZrEKK-WXW7MbcpIL6MxrsDAZWPSvguv" />
+                        </div>
+                        <div
+                            class="aspect-square bg-slate-200 rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-all cursor-pointer">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A group of diverse professionals having a collaborative discussion around a large white table in a bright, modern glass-walled meeting room. The lighting is soft and airy, creating a professional and vibrant networking atmosphere consistent with a high-end tech event."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDlPATb0XbZuXURiMHIlxBKJHLxmOLNHMEOX9nrJNCCRISEagEZhrIbQQOthZqOaoxnI_Hx4XRMKdjCAuZ23WGXytYopRIDNXYQ5aelNI9VryIQwxlmJIGWsv__yIpxymIEejkCT7phofS4M9nxCrWZb5Ib5G-av2PL4n6KZ2s4FfUumteRtTOc0BEcWOPLuq9WAjjV-ZQLcqMhXGnQAWaDgBWARotOC_MnRsi9JoluKKVw8ZIORD1BUH39OzELURcSi10cuhuJKUn" />
+                        </div>
+                        <div
+                            class="aspect-square bg-slate-200 rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-all cursor-pointer">
+                            <img class="w-full h-full object-cover"
+                                data-alt="An abstract shot of a modern architectural staircase in a convention center, featuring clean lines, glass balustrades, and soft shadow patterns. The palette is dominated by whites and grays with subtle indigo lighting accents, evoking a sense of structured precision."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Sc53ECCjJgTyIlYYSuTDVcGg-QRe9A_-ZbOtmx4dRly8mQc4N6pAYuOn6n1bNUxw4h0hSE-ETx2aDdai_ebkBBPlE3ykvK__b5XBvHbr0429REYgenUPfR5VJZ9ZaELZRh98iSsKq1SiSOBcaV4eEiOROKb5IW_gajna6CZWgjKK0YXQEP0qvcvy3UydZ57O9kOcbTvx0SoiRUjIWJLiJB9P4CoPjyS19xt2UuzjGHR_264-uthG1onmtejv1TYjiooSnjOQ238P" />
+                        </div>
+                        <div
+                            class="aspect-square bg-slate-200 rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-all cursor-pointer">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A bright co-working space with minimalist desks, ergonomic chairs, and large indoor plants. The atmosphere is quiet and productive, with natural light pouring in through floor-to-ceiling windows, highlighting a professional and architectural aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_pxYKpXivOIjZ9L6neo20sej6rLx2kOMbKElBKl1-ua8TmMgir3bfRxOuZh5Im3v1tRIopwTFVZX5PLor3_YUItLdYC1L3smeRGxBXxiLCwUNEa4Ndv3dNxY_5qoFNWJK0XnZGnMOTE8xfkSpQ-KMvl2Lyd1Gc6Aub-xRaBa2IVrTyyU40Y6syu0L1k8mCqAEqDwAly9oLMDmhegTBun1QqTW_7-MSYgM-ngknw2ydex3uRC-bHNsS5EFdgjSBr9Zeeu82UYo0DTw" />
+                        </div>
+                        <div
+                            class="aspect-square bg-slate-200 rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-all cursor-pointer">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A high-angle view of an auditorium filled with people attending a tech keynote. The stage is dimly lit with bright indigo spotlights and a large screen displaying software code. The mood is one of collective attention and technological advancement."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkxvTUihK1GT0-76sm0y6glsFOQKh6I1BnNZEs8-_1ga3wTmAEWLS8vA2RLeypcw2blilOTsB_IIOrdgcgcP4QAbw0L0KxeVAKEUZFlK3_cgRDf7jbxjpYRc-q1sLlvil7xUudj5cewHItuC24afQ6ns6uJUwO2geYOcGkrsd07Jj1awC9O0RnXR1HmMC2Wyvh7uofrEER31FNwZM6k5I4-JqRfJeKBVLk-tdUkspot6aaxUk0bdtAPLZdI8D5AFVpJI-4p38KrZhx" />
+                        </div>
+                        <div
+                            class="aspect-square bg-slate-100 rounded-lg border-2 border-dashed border-slate-300 flex flex-col items-center justify-center gap-base hover:bg-slate-50 transition-all cursor-pointer">
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant text-[32px]">add_a_photo</span>
+                            <span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">Adicionar
+                                Foto</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Right Column: Stats & Meta -->
+            <aside class="lg:col-span-4 space-y-stack-md">
+                <div class="bg-white p-stack-md rounded-xl border border-slate-200 space-y-stack-md sticky top-gutter">
+                    <!-- Date & Time -->
+                    <div class="flex items-start gap-stack-sm">
+                        <div class="bg-primary-container p-stack-sm rounded-lg text-on-primary-fixed">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                        </div>
+                        <div>
+                            <h3 class="font-body-sm text-body-sm font-semibold text-primary">Data</h3>
+                            <p class="text-on-surface-variant">October 24, 2024</p>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant opacity-70">09:00 AM - 06:00 PM
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border-slate-100" />
+                    <!-- Location -->
+                    <div class="flex items-start gap-stack-sm">
+                        <div class="bg-primary-container p-stack-sm rounded-lg text-on-primary-fixed">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="font-body-sm text-body-sm font-semibold text-primary">Local</h3>
+                            <p class="text-on-surface-variant">Tech Hub Innovation Center</p>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant opacity-70">San Francisco, CA
+                            </p>
+                            <!-- Mini Map Placeholder -->
+                            <div
+                                class="mt-base w-full h-32 bg-slate-100 rounded-lg border border-slate-200 overflow-hidden relative">
+                                <img alt="Map view" class="w-full h-full object-cover" data-location="San Francisco"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9lM8JQvCDO3ptBQM2Ah_DZ0tH9n-ejn9K2aBetROZ5wW7M8X3UfV0dIrXBKC5r1nJlIwv10_W3i-Evpq6--3MNmVssKRXkQkeEs_vi93ldwP4NN0sI592hz8xCs4DOqz9Ve-6-UQpuKabHz1c_o8xqJvck4wX8CU1a7L4R1CaWzGwgnasWHmXwN333hb20ppwqLWY5SAKKUVSpGrzAqhEQGeXig00XC399EZH-8EKYT6tPcB4F12HK21VwDgIKLTbTsgnjg1DJCmg" />
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-secondary text-[32px]"
+                                        style="font-variation-settings: 'FILL' 1;">location_on</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-slate-100" />
+                    <!-- Capacity -->
+                    <div class="flex items-start gap-stack-sm">
+                        <div class="bg-primary-container p-stack-sm rounded-lg text-on-primary-fixed">
+                            <span class="material-symbols-outlined">group</span>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between items-end mb-1">
+                                <h3 class="font-body-sm text-body-sm font-semibold text-primary">Capacidade Máxima</h3>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant">450 / 500</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-secondary h-full rounded-full w-[90%]"></div>
+                            </div>
+                            <p class="mt-base font-body-sm text-body-sm text-on-surface-variant italic">Quase esgotado!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Footer Action in Card -->
+                    <button
+                        class="w-full py-stack-sm bg-primary text-on-primary rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/10">
+                        Manage Attendees
+                    </button>
+                </div>
+                <!-- Quick Help -->
+                <div
+                    class="bg-secondary-container bg-opacity-10 p-stack-md rounded-xl border border-secondary border-opacity-20">
+                    <h4 class="font-body-sm text-body-sm font-bold text-secondary mb-base">Dica de Organizador</h4>
+                    <p class="text-on-surface-variant text-body-sm">
+                        Adicione imagens de alta resolução na galeria para aumentar o engajamento de futuros
+                        participantes em 40%.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="bg-surface-container-lowest border-t border-outline-variant mt-stack-lg">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center py-stack-md px-margin-desktop max-w-container-max mx-auto w-full">
+            <div class="space-y-base text-center md:text-left mb-stack-md md:mb-0">
+                <span class="font-title-md text-title-md font-bold text-primary">GitParty</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 GitParty. Architectural Minimalism
+                    in Event Management.</p>
+            </div>
+            <div class="flex gap-gutter">
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary hover:underline transition-all"
+                    href="#">Privacy Policy</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary hover:underline transition-all"
+                    href="#">Terms of Service</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary hover:underline transition-all"
+                    href="#">Contact</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary hover:underline transition-all"
+                    href="#">API Documentation</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

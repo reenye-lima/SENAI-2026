@@ -57,7 +57,14 @@ const promocaoListaEspera = async (eventoId) => {
         }
     });
 
-    console.log(evento);
+    await prisma.inscricoes.update({
+        where: {
+            id: evento.id
+        },
+        data: {
+            status: "CONFIRMADA"
+        }
+    });
 };
 
 module.exports = {

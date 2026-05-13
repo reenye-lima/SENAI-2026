@@ -15,7 +15,10 @@ const definirDestino = (req, file, callback) => {
 };
 
 const filtrarExtensao = (req, file, callback) => {
-  if (file.mimetype === "image/jpeg") {
+  if (file.mimetype === "image/jpeg" 
+      || 
+      file.mimetype === "image/jpg"
+    ) {
     callback(null, true);
   } else {
     callback(new Error("Apenas imagens JPEG são permitidas"));
